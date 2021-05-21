@@ -1,0 +1,216 @@
+body{
+    background: url(Carcassonne_files/image/mur-chateau.jpg) fixed;
+    cursor: url("Carcassonne_files/image/RWArrow.cur"),pointer;}
+e{font-size: 0.8em;}
+p{color: black; font-size: 1em; margin-bottom: 40px;}
+h1{font-size: 2em;}
+span{background-color: gold;}
+a:hover {
+    cursor: url("Carcassonne_files/image/RWPrecisionSelect.cur"), pointer;
+    background-color: beige;
+}
+a{color: #BA7523}
+siecle{font-size: 0.6em,}
+.titre{border: 1px solid black}
+
+#ENTETE{
+    border-bottom: 3px solid black;
+    background-image: url(Carcassonne_files/image/entete.jpg);
+    background-position: center 9%;
+    background-size: cover;
+    height: 500px;
+    background-repeat: no-repeat;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#titre_entete{
+    margin-left: 20px; 
+    font-size: 7em;
+    color: azure;
+    font-family: impact;}
+#departement{
+    color: azure;
+    font-size: 2em;
+    margin-left: 20px;}
+
+#CONTENU{
+    width: 980px;
+    height: auto;
+    margin: auto;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: beige;
+    border: 5px solid lightgray;
+    border-radius: 10px;
+}
+
+#histoire{
+    width: 30%;
+    margin-top: 5px;
+}
+#monuments{
+    width: 30%;
+    margin-top: 5px;
+}
+#animation{
+    width: 30%;
+    margin-top: 5px;
+}
+
+
+
+/*----- GALERIE -----*/
+
+*,*:before,*:after{box-sizing:border-box}
+
+img{
+    max-width:100%;
+    image-rendering:optimizeQuality;
+    pointer-events:none;
+    -moz-user-select:none;
+    -webkit-user-select:none;
+    -ms-user-select:none}
+
+.target{display:none;}
+
+.cadre_diapo{
+max-width:600px;
+height:540px;
+margin:20px auto;
+overflow:hidden;
+}
+.interieur_diapo{
+height:380px;
+position:relative;
+width:600%;
+transition:.6s ease;
+}
+.cadre_img{
+position:relative;
+width:600px;
+float:left;
+}
+
+#un:target ~ .cadre_diapo .interieur_diapo{margin-left:0;}
+#deux:target ~ .cadre_diapo .interieur_diapo{margin-left:-100%;}
+#trois:target ~ .cadre_diapo .interieur_diapo{margin-left:-200%;}
+#quatre:target ~ .cadre_diapo .interieur_diapo{margin-left:-300%;}
+
+
+.description{
+position:absolute;
+left:25px;
+top:2%;
+text-align:center;
+width:40%;
+height:30px;
+line-height:30px;
+color:white;
+background:hsla(0,0%,0%,.35);
+}
+
+.navigation_diapo{
+display:inline-block;
+list-style:none;
+}
+.navigation_diapo li{float:left;}
+.navigation_diapo li img{
+pointer-events:auto;
+border:3px solid white;
+border-radius: 5px;
+transition:.6s;
+}
+.navigation_diapo li img:hover{box-shadow:0 0 5px hsla(0,0%,0%,.4);}
+.navigation_diapo li a{
+display:inline-block;
+width:120px;
+margin:0 5px;
+height:80px;
+}
+
+@media screen and (max-width:62.75em){
+.cadre_diapo{
+width:100%;
+height:100%;}
+.cadre_img{width:25%;}
+.interieur_diapo{height:auto;}
+.navigation_diapo li a{height:100%;width:80px;}
+.navigation_diapo li img:hover{box-shadow:none;}
+}
+@media screen and (max-width:41.6em){
+.description{font-size:75%;}
+}
+@media screen and (max-width:25em){
+.navigation_diapo li a{height:100%;width:50px;}
+}
+
+.zoom {
+  transition: transform .2s;
+}
+.zoom:hover {
+  transform: scale(1.5);
+}
+
+/*----- CARTE -----*/
+
+#CARTE{
+    max-width: 980px;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    margin-bottom: 200px;
+}
+
+#tableau_carte{
+    width: 33%
+}
+.tab_carte{
+    background-color: brown;
+    color: white;
+}
+table,td {
+    border: 1px solid #333;
+    background-color: #FFD794;
+    margin: auto;
+}                   /* TABLEAU */
+thead,tfoot {
+    background-color: #333;
+    color: #fff;
+}
+
+/*----- CARTE -----*/
+
+#mapid { 
+    height: 400px;
+    width: 66%;
+    border: solid;
+    border-color: aliceblue;
+    border-radius: 0 50px 50px 0;
+}
+
+/*----- PIED -----*/
+
+#PIED{
+    background-image: url(Carcassonne_files/image/pied-de-page.png); /*#976007;*/
+    background-position: center 80%;
+    /*border: 2px solid #976007;
+    border-top-color: #6A4417;*/
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+#texte_bot{
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: yellow;
+}
+

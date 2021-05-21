@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)file:///D:/JH/code/masterchief.html -->
+<html lang="fr">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="Carcassonne" content="Découverte de la cité de Carcassonne">
+        <title> la cité de Carcassonne</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="Carcassonne.css">
+        <style>A {text-decoration: none;} </style>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js" integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+          crossorigin=""></script>
+    </head>
+    <body>
+        <div id="ENTETE">
+            <div id="titre_entete">La cité de <br>Carcassonne</div>
+            <div id="departement">Aude (11), <e>Languedoc-Roussillon, France</e></div>
+        </div>
+        <div id="CONTENU">
+            <div id="histoire">
+                <h1 class="titre"><center>Histoire de la cité</center></h1>
+                <p>La Cité de Carcassonne est un ensemble architectural médiéval qui se trouve dans la ville française de Carcassonne dans le département de l'Aude, région d'Occitanie. Elle est située sur la rive droite de l'Aude, au sud-est de la ville actuelle.<br>
+
+                Cette cité médiévale fortifiée, dont les origines remontent à la période gallo-romaine, doit sa renommée à <span>sa double enceinte, atteignant près de 3 km de longueur</span> et comportant <span>cinquante-deux tours</span>, qui domine la vallée de l'Aude. La Cité comprend également un château et une basilique.<br>
+
+                Sauvée de la destruction par l'action de l'archéologue <b>Jean-Pierre Cros-Mayrevieille</b>, puis restaurée au 19<siecle>ème</siecle> siècle de manière parfois controversée, la Cité de Carcassonne est, depuis 1997, <u>classée au patrimoine mondial de l'UNESCO</u>.</p>
+            </div>
+            <div id="monuments">
+                <h1 class="titre"><center>Les différents monuments de Carcassonne</center></h1>
+                <p>Il y a plusieurs monuments dans la cité de Carcassonne tel que :</p>
+                <ul>
+                    <li><a href="liens/monuments/tours-enceintes.html">les enceintes et les tours</a></li>
+                        
+                    <li><a href="liens/monuments/toutes-les-portes.html">toutes ces portes</a><br></li>
+                        
+                        
+                    <li><a href="liens/monuments/chateau-de-comtal.html">Le château de comtal</a><br></li>
+                        
+                    <li><a href="liens/monuments/basilique.html">La basilique Saint-Nazaire</a></li>
+                </ul>
+            </div>
+            <div id="animation">
+                <h1 class="titre"><center>Les animations dans la cité</center></h1>
+                <p>Au cours de l'année, plusieurs animations ce succèdent dans la cité pour divertir les touristes. Le plus connu étant <em><a href="http://carcassonne.org/article-page/lembrasement-de-la-cite-de-carcassonne">l'embrasement de la cité</a></em> qui regroupe chaque année pas moins de 700 000 spectateurs.<br>
+                Il y a une <em><a href="">reconstitution médiévale</a></em>, <a href="">un marathon</a> à travers la cité et <em><a href="">le festival de la cité</a></em> qui permet de découvrir des pièces de théatre et des concerts.</p>
+            </div>
+        </div>
+        <div id="GALERIE">
+            <div id="images"><center>
+                <span id="un" class="target"></span>
+                <span id="deux" class="target"></span>
+                <span id="trois" class="target"></span>
+                <span id="quatre" class="target"></span>
+                <div class="cadre_diapo">
+                    <div class="interieur_diapo">
+                        <div class=cadre_img>
+                            <div class=description>Cité vue du dessus</div>
+                            <img src="Carcassonne_files/image/cit%C3%A9-carcassonne.jpg" alt="Cité vue du dessus">
+                        </div>
+                        <div class=cadre_img>
+                            <div class=description>Château de Comtal</div>
+                            <img src="Carcassonne_files/image/chateau-comtal.jpg" alt="Château de Comtal">
+                        </div>
+                        <div class=cadre_img>
+                            <div class=description>"Embrasement" de la cité</div>
+                            <img src="Carcassonne_files/image/carcassonne-feu.jpg" alt="'Embrasement' de la cité">
+                        </div>
+                        <div class=cadre_img>
+                            <div class=description>Feux d'artifices sur la cité</div>
+                            <img src="Carcassonne_files/image/feu-carcassone2.jpg" alt="Feux d'artifices sur la cité">
+                            </div>
+                    </div>
+                    <ul class="navigation_diapo">
+                        <li>
+                            <a href="#un"><img class="zoom" src="Carcassonne_files/image/cit%C3%A9-carcassonne.jpg" alt></a>
+                        </li>
+                        <li>
+                            <a href="#deux"><img class="zoom" src="Carcassonne_files/image/chateau-comtal.jpg" alt></a>
+                        </li>
+                        <li>
+                            <a href="#trois"><img class="zoom" src="Carcassonne_files/image/carcassonne-feu.jpg" alt></a>
+                        </li>
+                        <li>
+                            <a href="#quatre"><img class="zoom" src="Carcassonne_files/image/feu-carcassone2.jpg" alt></a>
+                        </li>
+                    </ul>
+                </div>
+            </center></div>
+    </div>
+        <div id="CARTE">
+            <div id="tableau_carte">
+                <table>
+                    <tr>
+                        <th width=50% class="tab_carte"><center><strong>VILLES</strong></center></th>
+                        <td></td>
+                        <th width=50% class="tab_carte"><center><strong>DISTANCE<br>(à vol d'oiseau)</strong></center></th>
+                    </tr>
+                    <tr>
+                        <td><center>PARIS</center></td>
+                        <td></td>
+                        <td><center>627 Km</center></td>
+                    </tr>
+                    <tr>
+                        <td><center>BORDEAUX</center></td>
+                        <td></td>
+                        <td><center>297 Km</center></td>
+                    </tr>
+                    <tr>
+                        <td><center>MARSEILLE</center></td>
+                        <td></td>
+                        <td><center>244 Km</center></td>
+                    </tr>
+                    <tr>
+                        <td><center>CHAMPS-SUR-MARNE</center></td>
+                        <td></td>
+                        <td><center>628 Km</center></td>
+                    </tr>
+                </table>
+            </div>
+            <div id="mapid"></div>
+                <script src="Carcassonne.js" charset="utf-8"></script>
+        </div>
+        <div id="PIED">
+            <p id="texte_bot">Site web
+réalisé par <strong><u>HOUZIAUX Julien</u></strong> dans le cadre d’un TP.</p>
+        </div>
+
+    </body>
+</html>

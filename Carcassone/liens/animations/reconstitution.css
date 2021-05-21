@@ -1,0 +1,29 @@
+body{
+    width: auto;
+    height: auto;
+    background-color: antiquewhite;}
+p{color: black; font-size: 1.2em; margin-bottom: 40px;}
+siecle{font-size: 0.6em;}
+h1{
+    font-size: 3em;
+    margin-left: 50px;
+}
+
+#portes{
+    width: 1600px;
+    margin:auto;
+}
+#text{
+    margin-left: 10px;
+    width: 1500px;
+}
+#img-text{
+    display: flex;
+    flex-direction: row;
+}
+#text-haut{width: 1200px;}
+#image{
+    margin-left: 20px; 
+    border: 5px solid white;
+    border-radius: 10px;
+}
